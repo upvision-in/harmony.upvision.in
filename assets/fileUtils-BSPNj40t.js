@@ -1,0 +1,1 @@
+import{b as t}from"./index-00-OJ5U_.js";async function n(r){if(!r)return null;try{const e=await t.get(`/files/${r}`,{responseType:"blob"});return URL.createObjectURL(e.data)}catch(e){return console.error(`Error fetching authorized file URL for ${r}:`,e),null}}function a(r){r&&URL.revokeObjectURL(r)}export{a as c,n as g};
