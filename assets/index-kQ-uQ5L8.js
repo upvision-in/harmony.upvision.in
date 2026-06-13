@@ -1,0 +1,1 @@
+import{h as o,b as s}from"./vendor-react-DeHLy_d5.js";import{e as u}from"./index-C_rbwThi.js";var c=s[" useId ".trim().toString()]||(()=>{}),i=0;function f(t){const[r,a]=o.useState(c());return u(()=>{a(e=>e??String(i++))},[t]),t||(r?`radix-${r}`:"")}export{f as u};
