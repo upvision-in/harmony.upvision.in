@@ -6,12 +6,45 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UpVision - Harmony</title>
-  <script type="module" crossorigin src="/assets/index-DBWqTmGj.js"></script>
+  <!-- Applies stored theme before React mounts to prevent flash of wrong theme.
+       Font stacks and radius values must be kept in sync with AppearanceContext.tsx. -->
+  <script>
+    (function () {
+      try {
+        var mode = localStorage.getItem('harmony-theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.classList.toggle(
+          'dark',
+          mode === 'dark' || ((!mode || mode === 'system') && prefersDark)
+        );
+        var s = JSON.parse(localStorage.getItem('harmony_appearance') || '{}');
+        var root = document.documentElement;
+        if (s.colorScheme) root.dataset.colorScheme = s.colorScheme;
+        if (s.density) root.dataset.density = s.density;
+        var fonts = {
+          'inter': "'Inter Variable', 'Inter', sans-serif",
+          'geist': "'Geist Variable', 'Geist', sans-serif",
+          'jakarta': "'Plus Jakarta Sans Variable', 'Plus Jakarta Sans', sans-serif",
+          'dm-sans': "'DM Sans Variable', 'DM Sans', sans-serif",
+          'ibm-plex-sans': "'IBM Plex Sans Variable', 'IBM Plex Sans', sans-serif",
+          'manrope': "'Manrope Variable', 'Manrope', sans-serif",
+          'source-serif-4': "'Source Serif 4 Variable', 'Source Serif 4', serif",
+          'jetbrains-mono': "'JetBrains Mono Variable', 'JetBrains Mono', monospace",
+          'oswald': "'Oswald Variable', 'Oswald', sans-serif"
+        };
+        var radius = { 'sharp': '0rem', 'default': '0.5rem', 'rounded': '0.75rem', 'pill': '1.5rem' };
+        if (s.fontSans && fonts[s.fontSans]) root.style.setProperty('--app-font-sans', fonts[s.fontSans]);
+        if (s.fontHeading && fonts[s.fontHeading]) root.style.setProperty('--app-font-heading', fonts[s.fontHeading]);
+        if (s.radius && radius[s.radius]) root.style.setProperty('--radius', radius[s.radius]);
+      } catch (e) { }
+    })();
+  </script>
+  <script type="module" crossorigin src="/assets/index-DplQOKk4.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/vendor-react-DeHLy_d5.js">
   <link rel="modulepreload" crossorigin href="/assets/vendor-query-ImrhQQaL.js">
-  <link rel="modulepreload" crossorigin href="/assets/vendor-ui-DdP9bbNZ.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-ui-CYqt6eme.js">
   <link rel="modulepreload" crossorigin href="/assets/vendor-utils-B9rsyKdh.js">
-  <link rel="stylesheet" crossorigin href="/assets/index-DJ-T0v1T.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-DO36Bem6.css">
 </head>
 
 <body>
