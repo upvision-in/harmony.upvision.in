@@ -1,1 +1,0 @@
-{"version":3,"file":"MyProfile-CyXCKC7j.js","sources":["../../src/pages/MyProfile.tsx"],"sourcesContent":["import UserProfilePage from './UserProfile';\n\nconst MyProfile = () => <UserProfilePage isSelf={true} />;\n\nexport default MyProfile;\n"],"names":["MyProfile","jsx","UserProfilePage"],"mappings":"qhCAEA,MAAMA,EAAY,IAAMC,EAAAA,IAACC,EAAA,CAAgB,OAAQ,EAAA,CAAM"}
