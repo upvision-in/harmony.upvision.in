@@ -1,0 +1,1 @@
+{"version":3,"file":"MyProfile-Buvb8NBK.js","sources":["../../src/pages/MyProfile.tsx"],"sourcesContent":["import UserProfilePage from './UserProfile';\n\nconst MyProfile = () => <UserProfilePage isSelf={true} />;\n\nexport default MyProfile;\n"],"names":["MyProfile","jsx","UserProfilePage"],"mappings":"oiCAEA,MAAMA,EAAY,IAAMC,EAAAA,IAACC,EAAA,CAAgB,OAAQ,EAAA,CAAM"}

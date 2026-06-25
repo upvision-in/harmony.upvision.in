@@ -1,1 +1,0 @@
-import{d as s}from"./vendor-query-ImrhQQaL.js";import{d as t}from"./index-b5hTA6ae.js";import{q as n}from"./queryKeys-Bf_eg0aa.js";function u(r,e){return r.length<e.minLength||r.length>e.maxLength?e.errorMessage:null}function m(){return s({queryKey:n.passwordPolicy(),queryFn:()=>t.getPasswordPolicy(),staleTime:1/0,gcTime:1/0})}export{m as u,u as v};
