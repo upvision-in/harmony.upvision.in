@@ -1,1 +1,0 @@
-import{c as i}from"./index-B6Ryr_Sm.js";const o={getAllPermissionsGrouped:()=>i.get("/permissions").then(s=>s.data),getUserPermissions:s=>i.get(`/permissions/users/${s}`).then(e=>e.data),setUserPermissions:(s,e)=>i.put(`/permissions/users/${s}`,{assignments:e}).then(r=>r.data)};export{o as p};

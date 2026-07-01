@@ -1,1 +1,0 @@
-{"version":3,"file":"MyProfile-DBXQBHl4.js","sources":["../../src/pages/MyProfile.tsx"],"sourcesContent":["import UserProfilePage from './UserProfile';\n\nconst MyProfile = () => <UserProfilePage isSelf={true} />;\n\nexport default MyProfile;\n"],"names":["MyProfile","jsx","UserProfilePage"],"mappings":"4+BAEA,MAAMA,EAAY,IAAMC,EAAAA,IAACC,EAAA,CAAgB,OAAQ,EAAA,CAAM"}

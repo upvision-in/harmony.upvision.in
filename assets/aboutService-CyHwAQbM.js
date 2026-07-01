@@ -1,0 +1,1 @@
+const r="https://api.harmony.upvision.in/api";async function a(i,o){const e=new AbortController,n=o!==void 0?setTimeout(()=>e.abort(),o):void 0;try{const t=await fetch(`${r}${i}`,{signal:e.signal});if(!t.ok)throw new Error(`${t.status}`);return t.json()}finally{n!==void 0&&clearTimeout(n)}}const s={getAbout:()=>a("/about"),getHealth:()=>a("/health/live",1e4)};export{s as a};
